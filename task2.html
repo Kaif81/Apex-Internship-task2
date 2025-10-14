@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Professional Internship Task</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="theme-toggle-container">
+    <button id="themeToggle">🌞</button>
+  </div>
+
+  <header>
+    <h1>List & Link</h1>
+    <p>List It. Link It. Get It Done.</p>
+  </header>
+
+  <main class="container">
+    
+    <section class="glass card">
+      <h2>📨 Contact Us</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Full Name" required />
+        <input type="email" id="email" placeholder="Email Address" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send</button>
+        <small id="formMsg"></small>
+      </form>
+    </section>
+
+    
+    <section class="glass card">
+      <h2>🗂️ Your To-Do List</h2>
+      <div class="todo-input">
+        <input type="text" id="taskInput" placeholder="New task..." />
+        <button onclick="addTask()">Add</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; Made by Mir Md Kaif | All Rights Reserved</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
